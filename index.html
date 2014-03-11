@@ -8,17 +8,18 @@
 // heatmap configuration
 var config = {
 element: document.getElementById("floorPlan"),
-radius: 30,
+radius: 20,
 opacity: 50
 };
 //creates and initializes the heatmap
 var heatmap = h337.create(config);
  
 // let's get some data
+//heat zone is affected between max, image size, and radius, and counts
 var data = {
-max: 20,
+max: 80,
 data: [
-{ x: 10, y: 20, count: 18 },
+{ x: 287, y: 20, count: 72 },
 { x: 25, y: 25, count: 14 },
 { x: 50, y: 30, count: 20 }
 // ...
