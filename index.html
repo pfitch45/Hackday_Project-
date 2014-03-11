@@ -1,37 +1,12 @@
 <html>
 <head>
 	<link href="css/floorplan.css" rel="stylesheet"/>
-	<script type="text/javascript" src="javascriptFiles/heatmap.js"></script>
-<script type="text/javascript">
- window.onload = function(){
- 
-// heatmap configuration
-var config = {
-element: document.getElementById("floorPlan"),
-radius: 20,
-opacity: 50
-};
-//creates and initializes the heatmap
-var heatmap = h337.create(config);
- 
-// let's get some data
-//heat zone is affected between max, image size, and radius, and counts
-var data = {
-max: 80,
-data: [
-{ x: 287, y: 20, count: 72 },
-{ x: 25, y: 25, count: 14 },
-{ x: 50, y: 30, count: 20 }
-// ...
-]
-};
- 
-heatmap.store.setDataSet(data);
-};
-</script>
+	<script type="text/javascript" src="javascript/heatmap.js"></script>
+  <script type="text/javascript" src="javascript/packagemap.js"></script>
+  <!-- Remove dev-gid after done with development -->
+  <script type="text/javascript" src="javascript/dev-grid.js"></script>
 </head>
 <body>
-<div id="floorPlan" />
-
+  <div id="floorplan"></div>
 </body>
-</html> 
+</html>
