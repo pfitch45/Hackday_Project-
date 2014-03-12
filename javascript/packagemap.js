@@ -3,7 +3,7 @@ window.onload = function (){
   // heatmap configuration
   var config = {
     element: document.getElementById("floorplan"),
-    radius: 20,
+    radius: 15,
     opacity: 50,
     top: 'auto',
     left: 'auto'
@@ -15,11 +15,11 @@ window.onload = function (){
   // let's get some data
   // heat zone is affected between max, image size, radius, and counts
   var data = {
-    max: 80,
+    max: 28,
     data: [
-      { x: 287, y: 20, count: 72, name: 'Chris' },
-      { x: 25, y: 25, count: 14 },
-      { x: 50, y: 30, count: 20 }
+      { x: 245, y: 35, count: 20, name: 'Chris' },
+      { x: 235, y: 17, count: 8, name: 'Jesse' },
+      { x: 219, y: 27, count: 6, name: 'Ann' },
       // ...
     ]
   };
