@@ -130,7 +130,7 @@ mean(packageNumbers);
 /*total packages 636
 mean 6.42
 median 5
-mode
+mode 1
 */
 packageNumbers.sort(function (a,b) {return a-b;});
 console.log(packageNumbers);
