@@ -9,7 +9,7 @@
 
     var el = document.getElementsByClassName('grid')[0];
     el.parentElement.style.cursor = 'crosshair';
-    drawGrid(el, 10);
+    // drawGrid(el, 10);
     createTooltip(el);
   });
 
