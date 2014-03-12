@@ -1,5 +1,10 @@
-#floorPlan {
+#floorplan {
 	height: 560px;
 	width: 805px;
 	background: url('../images/floorplan.jpg') no-repeat;
+  margin: 0 auto;
+}
+
+#floorplan > canvas {
+  position: absolute;
 }
