@@ -23,7 +23,7 @@
       width = el.clientWidth,
       height = el.clientHeight;
 
-    context.fillStyle = '#000';
+    context.fillStyle = 'rgba(50, 140, 200, 0.25)';
     for (var x = 0; x < width - 1; x += inc)
       context.fillRect(x, 0, 1, height);
     for (var y = 0; y < height - 1; y += inc)
@@ -47,16 +47,17 @@
     style.display = 'none';
 
     document.addEventListener('click', function (evt) {
+      if ((evt.srcElement || evt.target).tagName !== el.tagName) {
+        return (style.display = 'none');
+      }
       var x = evt.clientX - el.offsetLeft,
         y = evt.clientY - el.offsetTop;
-      xCoordinate.innerText = x;
-      yCoordinate.innerText = y;
+      xCoordinate.innerHTML = x;
+      yCoordinate.innerHTML = y;
       style.left = evt.clientX + 'px';
       style.top = evt.clientY + 'px';
       style.display = 'block';
-      console.log(x, ', ', y);
     });
   }
 
 }());
-

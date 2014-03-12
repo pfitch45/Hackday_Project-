@@ -4,7 +4,9 @@ window.onload = function (){
   var config = {
     element: document.getElementById("floorplan"),
     radius: 20,
-    opacity: 50
+    opacity: 50,
+    top: 'auto',
+    left: 'auto'
   };
 
   // creates and initializes the heatmap
@@ -15,7 +17,7 @@ window.onload = function (){
   var data = {
     max: 80,
     data: [
-      { x: 287, y: 20, count: 72 },
+      { x: 287, y: 20, count: 72, name: 'Chris' },
       { x: 25, y: 25, count: 14 },
       { x: 50, y: 30, count: 20 }
       // ...
@@ -23,4 +25,10 @@ window.onload = function (){
   };
 
   heatmap.store.setDataSet(data);
+
+  removeInlineStyling(config.element.getElementsByTagName('canvas')[0]);
 };
+
+function removeInlineStyling (element) {
+  element.style.cssText = '';
+}
