@@ -5,12 +5,12 @@ window.onload = function (){
   // heatmap configuration
   var config = {
     element: document.getElementById("floorplan"),
-    radius: 7,
+    radius: 15,
     opacity: 100,
     top: 'auto',
     left: 'auto',
 
-    gradient: { 0.10: "rgb(0,0,255)", 0.12: "rgb(0,255,255)", 0.25: "rgb(0,255,0)", 0.35: "yellow", 0.38: "rgb(255,0,0)" }
+    gradient: { 0.10: "rgb(0,0,255)", 0.12: "rgb(0,255,255)", 0.25: "rgb(0,255,0)", 0.35: "yellow", 0.70: "rgb(255,0,0)", }
   };
 
   // creates and initializes the heatmap
@@ -104,30 +104,30 @@ window.onload = function (){
       { x:387, y:482, count: 20, name: 'Paff'},
       { x:31, y:169, count: 6, name: 'Pisoni'},
       { x:486, y:482, count: 2, name: 'Poonwalla'},
-      { x:0, y:0, count: 5, name: 'Ricasata'},
-      { x:0, y:0, count: 6, name: 'Robson'},
-      { x:0, y:0, count: 2, name: 'Rogers'},
-      { x:0, y:0, count: 4, name: 'Rose'},
-      { x:0, y:0, count: 1, name: 'Sai Giri'},
-      { x:0, y:0, count: 14, name: 'Setzer'},
-      { x:0, y:0, count: 10, name: 'Shah'},
-      { x:0, y:0, count: 2, name: 'Shapiro'},
-      { x:0, y:0, count: 1, name: 'Shaw'},
-      { x:0, y:0, count: 2, name: 'Shellenberger'},
-      { x:0, y:0, count: 13, name: 'Sunday'},
-      { x:0, y:0, count: 2, name: 'Tapadia'},
+      { x:313, y:286, count: 5, name: 'Ricasata'},
+      { x:219, y:27, count: 6, name: 'Robson'},
+      { x:328, y:45, count: 2, name: 'Rogers'},
+      { x:, y:, count: 4, name: 'Rose'},
+      { x:126, y:482, count: 1, name: 'Sai Giri'},
+      { x:174, y:42, count: 14, name: 'Setzer'},
+      { x:27, y:495, count: 10, name: 'Shah'},
+      { x:779, y:527, count: 2, name: 'Shapiro'},
+      { x:44, y:486, count: 1, name: 'Shaw'},
+      { x:26, y:550, count: 2, name: 'Shellenberger'},
+      { x:58, y:317, count: 13, name: 'Sunday'},
+      { x:240, y:189, count: 2, name: 'Tapadia'},
       { x:0, y:0, count: 6, name: 'Taylor'},
-      { x:0, y:0, count: 2, name: 'Thakur'},
-      { x:0, y:0, count: 5, name: 'Thein'},
-      { x:0, y:0, count: 4, name: 'Timur'},
-      { x:0, y:0, count: 26, name: 'Tran'},
-      { x:0, y:0, count: 12, name: 'Van Schyndel'},
-      { x:0, y:0, count: 15, name: 'Van Nest'},
-      { x:0, y:0, count: 2, name: 'Williams'},
-      { x:0, y:0, count: 1, name: 'Wolfe'},
-      { x:0, y:0, count: 1, name: 'Xiao'},
-      { x:0, y:0, count: 6, name: 'Zhang-Y'},
-      { x:0, y:0, count: 1, name: 'Zhang-W'},*/
+      { x:460, y:455, count: 2, name: 'Thakur'},
+      { x:335, y:17, count: 5, name: 'Thein'},
+      { x:116, y:499, count: 4, name: 'Timur'},
+      { x:753, y:500, count: 26, name: 'Tran'},
+      { x:550, y:492, count: 12, name: 'Van Schyndel'},
+      { x:127, y:88, count: 15, name: 'Van Nest'},
+      { x:703, y:517, count: 2, name: 'Williams'},
+      { x:41, y:380, count: 1, name: 'Wolfe'},
+      { x:387, y:427, count: 1, name: 'Xiao'},
+      { x:51, y:17, count: 6, name: 'Zhang-Y'},
+      { x:34, y:78, count: 1, name: 'Zhang-W'},*/
 
     ]
   };
