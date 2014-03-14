@@ -1,5 +1,5 @@
 
-
+alert('Jay Laney wins at packages!!!!111!!111!');
 window.onload = function (){
 
   // heatmap configuration
@@ -33,7 +33,7 @@ window.onload = function (){
       { x: 108, y: 300, count: 2, name: 'test'},
       { x: 239, y: 188, count: 3, name: 'test2'},
       { x: 311, y: 285, count: 6, name: 'test3'},*/
-      
+
       { x:108, y:222, count: 27, name: 'Akimoff'},
       { x:322, y:435, count: 2, name: 'Anderson'},
       { x:127, y:157, count: 7, name: 'Anesse'},
