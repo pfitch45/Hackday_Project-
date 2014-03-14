@@ -1,0 +1,62 @@
+.color-gradient {
+	height: 50px;
+	width: 256px;
+	background: background: rgb(0,102,204); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(0,102,204,1) 2%, rgba(0,102,204,1) 45%, rgba(0,255,255,1) 59%, rgba(0,237,162,1) 61%, rgba(0,255,0,1) 64%, rgba(255,255,0,1) 70%, rgba(255,0,0,1) 80%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(2%,rgba(0,102,204,1)), color-stop(45%,rgba(0,102,204,1)), color-stop(59%,rgba(0,255,255,1)), color-stop(61%,rgba(0,237,162,1)), color-stop(64%,rgba(0,255,0,1)), color-stop(70%,rgba(255,255,0,1)), color-stop(80%,rgba(255,0,0,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,102,204,1) 2%,rgba(0,102,204,1) 45%,rgba(0,255,255,1) 59%,rgba(0,237,162,1) 61%,rgba(0,255,0,1) 64%,rgba(255,255,0,1) 70%,rgba(255,0,0,1) 80%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradixent(left,  rgba(0,102,204,1) 2%,rgba(0,102,204,1) 45%,rgba(0,255,255,1) 59%,rgba(0,237,162,1) 61%,rgba(0,255,0,1) 64%,rgba(255,255,0,1) 70%,rgba(255,0,0,1) 80%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,102,204,1) 2%,rgba(0,102,204,1) 45%,rgba(0,255,255,1) 59%,rgba(0,237,162,1) 61%,rgba(0,255,0,1) 64%,rgba(255,255,0,1) 70%,rgba(255,0,0,1) 80%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,102,204,1) 2%,rgba(0,102,204,1) 45%,rgba(0,255,255,1) 59%,rgba(0,237,162,1) 61%,rgba(0,255,0,1) 64%,rgba(255,255,0,1) 70%,rgba(255,0,0,1) 80%); /* W3C */
+	            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0066cc', endColorstr='#ff0000',GradientType=1 ); /* IE6-9 */
+    border: 3px solid rgb(0,0,0);
+}
+.legend-container {
+	padding: 10px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	bottom: 10px;
+	right: 10px;
+	font-family: Times;
+	width: 256px;
+	z-index: 10000000000;
+	background-color: rgb(255, 255, 255);
+	border: 5px solid rgb(0, 0, 0);
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+
+.legend-item {
+	/*width: 32%; /* Change this to correspond to 1/(number of items) 8*/
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	left: 75px;
+}
+
+
+.legend-item.right-align {
+	float: right;
+	text-align: right;
+	position: static;
+}
+.legend-item.left-align {
+	float: left;
+	text-align: left;
+	position: static;
+}
+/*.legend-container {
+	margin: 0 auto;
+	height: 80px;
+	width: 160px; */
+
+}
+
+
+/* 1 --> #91BCE8 */

@@ -9,8 +9,11 @@ window.onload = function (){
     opacity: 100,
     top: 'auto',
     left: 'auto',
+    
+    gradient: { 0.45: "rgb(0,0,255)", 0.45: "rgb(0,102,204)", 0.6: "rgb(0,255,255)", 0.6: "rgb(0,255,0)", 0.65: "yellow", 0.8: "rgb(255,0,0)",
 
-    gradient: { 0.10: "rgb(0,0,255)", 0.12: "rgb(0,255,255)", 0.25: "rgb(0,255,0)", 0.35: "yellow", 0.70: "rgb(255,0,0)", }
+
+     }
   };
 
   // creates and initializes the heatmap
@@ -21,16 +24,18 @@ window.onload = function (){
   var data = {
     max: 28,
     data: [
-      { x: 245, y: 35, count: 20, name: 'Chris' },
+     /* { x: 245, y: 35, count: 20, name: 'Chris' },
       { x: 235, y: 17, count: 8, name: 'Jesse' },
       { x: 219, y: 27, count: 6, name: 'Ann' },
       { x: 486, y: 427, count: 1, name: 'Marvin' },
       { x: 108, y: 222, count: 27, name: 'Christina' },
       { x: 108, y: 170, count: 14, name: 'Haley'},
       { x: 108, y: 300, count: 2, name: 'test'},
-
-      /*{ x:108, y:222, count: 27, name: 'Akimoff'},
-      { x:, y:0, count: 2, name: 'Anderson'},
+      { x: 239, y: 188, count: 3, name: 'test2'},
+      { x: 311, y: 285, count: 6, name: 'test3'},*/
+      
+      { x:108, y:222, count: 27, name: 'Akimoff'},
+      { x:322, y:435, count: 2, name: 'Anderson'},
       { x:127, y:157, count: 7, name: 'Anesse'},
       { x:761, y:517, count: 5, name: 'Anthony'},
       { x:34, y:26, count: 2, name: 'Asok'},
@@ -67,7 +72,6 @@ window.onload = function (){
       { x:330, y:295, count: 5, name: 'Hsu'},
       { x:160, y:223, count: 2, name: 'Hunt'},
       { x:694, y:446, count: 23, name: 'Hutch'},
-    //{ x:0, y:0, count: 1, name: 'Imbach'},
       { x:169, y:189, count: 1, name: 'Jiang'},
       { x:403, y:384, count: 9, name: 'Kaushish'},
       { x:311, y:419, count: 9, name: 'Kawamoto'},
@@ -86,7 +90,6 @@ window.onload = function (){
       { x:404, y:438, count: 1, name: 'Loscutoff'},
       { x:695, y:500, count: 1, name: 'Love'},
       { x:470, y:384, count: 3, name: 'Low'},
-    //{ x:0, y:0, count: 1, name: 'Lucey'},
       { x:41, y:361, count: 6, name: 'Maldonando'},
       { x:234, y:17, count: 8, name: 'Martin'},
       { x:397, y:410, count: 1, name: 'Mazur'},
@@ -107,7 +110,7 @@ window.onload = function (){
       { x:313, y:286, count: 5, name: 'Ricasata'},
       { x:219, y:27, count: 6, name: 'Robson'},
       { x:328, y:45, count: 2, name: 'Rogers'},
-      { x:, y:, count: 4, name: 'Rose'},
+      { x:181, y:16, count: 4, name: 'Rose'},
       { x:126, y:482, count: 1, name: 'Sai Giri'},
       { x:174, y:42, count: 14, name: 'Setzer'},
       { x:27, y:495, count: 10, name: 'Shah'},
@@ -116,7 +119,7 @@ window.onload = function (){
       { x:26, y:550, count: 2, name: 'Shellenberger'},
       { x:58, y:317, count: 13, name: 'Sunday'},
       { x:240, y:189, count: 2, name: 'Tapadia'},
-      { x:0, y:0, count: 6, name: 'Taylor'},
+      { x: 292, y: 33, count: 6, name: 'Taylor'},
       { x:460, y:455, count: 2, name: 'Thakur'},
       { x:335, y:17, count: 5, name: 'Thein'},
       { x:116, y:499, count: 4, name: 'Timur'},
@@ -127,7 +130,7 @@ window.onload = function (){
       { x:41, y:380, count: 1, name: 'Wolfe'},
       { x:387, y:427, count: 1, name: 'Xiao'},
       { x:51, y:17, count: 6, name: 'Zhang-Y'},
-      { x:34, y:78, count: 1, name: 'Zhang-W'},*/
+      { x:34, y:78, count: 1, name: 'Zhang-W'}
 
     ]
   };
