@@ -1,5 +1,5 @@
 
-alert('Jay Laney wins at packages!!!!111!!111!');
+alert('The total number of packages for this two month period was 636.  The mean was 6.42, the median was 5, the range was 25, and the standard deviation was 6.70!');
 window.onload = function (){
 
   // heatmap configuration
