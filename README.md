@@ -1,2 +1,2 @@
-Hackday_Project-
+Hackday_Project-Beer Beacon plugin
 ================

@@ -1,6 +1,5 @@
 
-//alert('The total number of packages for this two month period was 636.  The mean was 6.42, the median was 5, the range was 27, and the standard deviation was 6.70!');
-window.onload = function (){
+window.addEventListener('load', function (){
 
   // heatmap configuration
   var config = {
@@ -17,22 +16,13 @@ window.onload = function (){
   };
 
   // creates and initializes the heatmap
-  var heatmap = h337.create(config);
+
 
   // let's get some data
   // heat zone is affected between max, image size, radius, and counts
   var data = {
     max: 28,
     data: [
-     /* { x: 245, y: 35, count: 20, name: 'Chris' },
-      { x: 235, y: 17, count: 8, name: 'Jesse' },
-      { x: 219, y: 27, count: 6, name: 'Ann' },
-      { x: 486, y: 427, count: 1, name: 'Marvin' },
-      { x: 108, y: 222, count: 27, name: 'Christina' },
-      { x: 108, y: 170, count: 14, name: 'Haley'},
-      { x: 108, y: 300, count: 2, name: 'test'},
-      { x: 239, y: 188, count: 3, name: 'test2'},
-      { x: 311, y: 285, count: 6, name: 'test3'},*/
 
       { x:108, y:222, count: 27, name: 'Akimoff'},
       { x:322, y:435, count: 2, name: 'Anderson'},
@@ -139,7 +129,7 @@ window.onload = function (){
   heatmap.store.setDataSet(compressedData);
 
   removeInlineStyling(config.element.getElementsByTagName('canvas')[0]);
-};
+});
 
 function removeInlineStyling (element) {
   element.style.cssText = '';
